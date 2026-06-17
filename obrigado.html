@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Obrigado pela Compra! · Ervas & Sabedoria</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
+
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '2060979491520323');
+  
+  fbq('track', 'PageView');
+  fbq('track', 'Purchase', {
+    value: 27.00,
+    currency: 'BRL'
+  });
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=2060979491520323&ev=PageView&noscript=1"
+  /></noscript>
+
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #0b1a0d;
+      color: #e2ede3;
+      -webkit-font-smoothing: antialiased;
+      min-height: 100vh;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .wrapper {
+      max-width: 600px;
+      margin: 0 auto;
+      padding: 60px 24px;
+      text-align: center;
+      position: relative;
+    }
+    .wrapper::before {
+      content: '';
+      position: absolute;
+      top: -60px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 500px;
+      height: 500px;
+      background: radial-gradient(circle, rgba(77,160,85,0.1) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .success-icon { font-size: 64px; color: #6dbf75; margin-bottom: 24px; display: inline-block; animation: scaleUp 0.4s ease-out; }
+    h1 { font-family: 'Playfair Display', serif; font-size: clamp(28px, 5vw, 42px); font-weight: 700; line-height: 1.2; color: #f0f7e6; margin-bottom: 16px; }
+    h1 span { color: #6dbf75; }
+    .subtitle { font-size: 16px; color: #7a9e7c; line-height: 1.6; margin-bottom: 40px; }
+    .steps-card { background: #101e12; border: 0.5px solid #1e3d22; border-radius: 14px; padding: 32px 24px; text-align: left; margin-bottom: 40px; box-shadow: 0 10px 30px rgba(0,0,0,0.3); }
+    .steps-card h2 { font-family: 'Playfair Display', serif; font-size: 20px; color: #f0f7e6; margin-bottom: 20px; border-bottom: 0.5px solid #1e3d22; padding-bottom: 10px; }
+    .step-item { display: flex; gap: 16px; margin-bottom: 20px; }
+    .step-item:last-child { margin-bottom: 0; }
+    .step-number { width: 28px; height: 28px; border-radius: 50%; background: #152d17; border: 0.5px solid #2a5230; color: #6dbf75; display: flex; align-items: center; justify-content: center; font-weight: 600; font-size: 13px; flex-shrink: 0; }
+    .step-text h3 { font-size: 15px; font-weight: 500; color: #cce5ce; margin-bottom: 4px; }
+    .step-text p { font-size: 13px; color: #7a9e7c; line-height: 1.5; }
+    .btn-primary {
+      display: block;
+      width: 100%;
+      max-width: 380px;
+      margin: 0 auto 16px;
+      background: #4a9e52;
+      color: #fff;
+      font-size: 17px;
+      font-weight: 500;
+      padding: 17px 28px;
+      border-radius: 50px;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.15s;
+      letter-spacing: 0.2px;
+      box-shadow: 0 4px 15px rgba(74, 158, 82, 0.3);
+    }
+    .btn-primary:hover { background: #3d8a44; transform: translateY(-2px); }
+    .btn-primary i { font-size: 20px; vertical-align: -4px; margin-right: 8px; }
+    .btn-secondary {
+      display: block;
+      width: 100%;
+      max-width: 380px;
+      margin: 0 auto;
+      background: transparent;
+      color: #6dbf75;
+      font-size: 15px;
+      font-weight: 500;
+      padding: 14px 28px;
+      border-radius: 50px;
+      border: 0.5px solid #2a5230;
+      cursor: pointer;
+      text-decoration: none;
+      transition: border-color 0.2s, background 0.2s;
+    }
+    .btn-secondary:hover { background: #101e12; border-color: #4a9e52; }
+    .btn-secondary i { font-size: 18px; vertical-align: -3px; margin-right: 6px; }
+    footer { text-align: center; padding: 28px 24px; font-size: 12px; color: #243826; border-top: 0.5px solid #131f14; width: 100%; }
+    @keyframes scaleUp {
+      0% { transform: scale(0.5); opacity: 0; }
+      100% { transform: scale(1); opacity: 1; }
+    }
+  </style>
+</head>
+<body>
+
+  <div class="wrapper">
+    <div class="success-icon">
+      <i class="ti ti-circle-check-filled"></i>
+    </div>
+    
+    <h1>Seu acesso foi <span>Liberado!</span></h1>
+    <p class="subtitle">Parabéns por investir na sua saúde e no conhecimento da medicina ancestral natural.</p>
+
+    <div class="steps-card">
+      <h2>Como acessar o seu Guia:</h2>
+      
+      <div class="step-item">
+        <div class="step-number">1</div>
+        <div class="step-text">
+          <h3>Verifique seu E-mail</h3>
+          <p>Você receberá uma mensagem da Kiwify com os seus dados de acesso imediatos.</p>
+        </div>
+      </div>
+
+      <div class="step-item">
+        <div class="step-number">2</div>
+        <div class="step-text">
+          <h3>Faça o Download do PDF</h3>
+          <p>Caso tenha comprado via PIX ou Cartão, o download já está disponível na sua área de membros.</p>
+        </div>
+      </div>
+
+      <div class="step-item">
+        <div class="step-number">3</div>
+        <div class="step-text">
+          <h3>Olhe na caixa de Spam</h3>
+          <p>Se não encontrar o e-mail em até 3 minutos, cheque a pasta de 'Spam' ou 'Promoções'.</p>
+        </div>
+      </div>
+    </div>
+
+    <a href="👉 LINK_DA_AREA_DE_MEMBROS_OU_DOWNLOAD" class="btn-primary" target="_blank" rel="noopener">
+      <i class="ti ti-download" aria-hidden="true"></i>
+      Acessar Guia de Plantas Agora
+    </a>
+
+    <a href="https://wa.me/5531999999999?text=Olá!%20Acabei%20de%20comprar%20o%20guia%20e%20preciso%20de%20ajuda." class="btn-secondary" target="_blank" rel="noopener">
+      <i class="ti ti-headset" aria-hidden="true"></i>
+      Precisa de ajuda? Fale com o Suporte
+    </a>
+  </div>
+
+  <footer>
+    <p>© 2026 · Ervas &amp; Sabedoria · Todos os direitos reservados</p>
+  </footer>
+
+</body>
+</html>

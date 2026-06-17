@@ -1,0 +1,415 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>O Poder das Plantas Medicinais</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;600;700&family=Inter:wght@400;500&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/tabler-icons.min.css" />
+
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '2060979491520323');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=2060979491520323&ev=PageView&noscript=1"
+  /></noscript>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #0b1a0d;
+      color: #e2ede3;
+      -webkit-font-smoothing: antialiased;
+    }
+    .hero {
+      text-align: center;
+      padding: 72px 24px 56px;
+      background: #0b1a0d;
+      position: relative;
+      overflow: hidden;
+    }
+    .hero::before {
+      content: '';
+      position: absolute;
+      top: -120px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 600px;
+      height: 600px;
+      background: radial-gradient(circle, rgba(77,160,85,0.12) 0%, transparent 70%);
+      pointer-events: none;
+    }
+    .badge {
+      display: inline-block;
+      background: #152d17;
+      color: #6dbf75;
+      font-size: 11px;
+      font-weight: 500;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 6px 18px;
+      border-radius: 20px;
+      margin-bottom: 32px;
+      border: 0.5px solid #2a5230;
+    }
+    .hero h1 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(30px, 6vw, 54px);
+      font-weight: 700;
+      line-height: 1.15;
+      color: #f0f7e6;
+      max-width: 640px;
+      margin: 0 auto 22px;
+    }
+    .hero h1 span { color: #6dbf75; }
+    .hero .sub {
+      font-size: 17px;
+      color: #7a9e7c;
+      max-width: 480px;
+      margin: 0 auto 48px;
+      line-height: 1.75;
+    }
+    .video-wrap {
+      max-width: 660px;
+      margin: 0 auto;
+      border-radius: 14px;
+      overflow: hidden;
+      border: 0.5px solid #1e3d22;
+      background: #091209;
+      position: relative;
+      box-shadow: 0 20px 40px rgba(0,0,0,0.5);
+    }
+    .video-container {
+      position: relative;
+      width: 100%;
+      padding-bottom: 56.25%;
+      height: 0;
+    }
+    .video-container iframe, 
+    .video-container video {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      border: none;
+    }
+    .video-note {
+      text-align: center;
+      font-size: 13px;
+      color: #3d6640;
+      padding: 14px;
+      border-top: 0.5px solid #152d17;
+    }
+    .section {
+      max-width: 660px;
+      margin: 0 auto;
+      padding: 64px 24px;
+    }
+    .divider {
+      width: 40px;
+      height: 2px;
+      background: #3d7a42;
+      margin: 0 auto 28px;
+    }
+    .section h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(24px, 4.5vw, 36px);
+      font-weight: 600;
+      text-align: center;
+      color: #f0f7e6;
+      margin-bottom: 14px;
+      line-height: 1.25;
+    }
+    .section .desc {
+      text-align: center;
+      color: #7a9e7c;
+      font-size: 16px;
+      line-height: 1.75;
+      margin-bottom: 44px;
+    }
+    .cards {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+      gap: 14px;
+      margin-bottom: 52px;
+    }
+    .card {
+      background: #101e12;
+      border: 0.5px solid #1e3d22;
+      border-radius: 12px;
+      padding: 22px 16px;
+      text-align: center;
+      transition: border-color 0.2s;
+    }
+    .card:hover { border-color: #3d7a42; }
+    .card-icon { font-size: 30px; display: block; margin-bottom: 12px; }
+    .card h3 { font-size: 14px; font-weight: 500; color: #cce5ce; margin-bottom: 6px; }
+    .card p { font-size: 12px; color: #4d7550; line-height: 1.55; }
+    .stats {
+      display: flex;
+      justify-content: center;
+      gap: 40px;
+      flex-wrap: wrap;
+    }
+    .stat { text-align: center; }
+    .stat-num {
+      font-family: 'Playfair Display', serif;
+      font-size: 36px;
+      font-weight: 700;
+      color: #6dbf75;
+      display: block;
+      line-height: 1;
+      margin-bottom: 4px;
+    }
+    .stat-lbl { font-size: 12px; color: #4d7550; letter-spacing: 0.5px; }
+    .sep { border: none; border-top: 0.5px solid #152d17; }
+    .testimonials {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+      gap: 14px;
+    }
+    .testi {
+      background: #101e12;
+      border: 0.5px solid #1e3d22;
+      border-radius: 12px;
+      padding: 20px;
+    }
+    .testi-stars { color: #6dbf75; font-size: 14px; margin-bottom: 10px; }
+    .testi p {
+      font-size: 14px;
+      color: #9ab89c;
+      line-height: 1.65;
+      margin-bottom: 14px;
+      font-style: italic;
+    }
+    .testi-name { font-size: 13px; font-weight: 500; color: #cce5ce; }
+    .testi-loc { font-size: 12px; color: #4d7550; }
+    .cta {
+      background: #091209;
+      border-top: 0.5px solid #1e3d22;
+      padding: 64px 24px;
+      text-align: center;
+    }
+    .cta h2 {
+      font-family: 'Playfair Display', serif;
+      font-size: clamp(24px, 4vw, 34px);
+      font-weight: 600;
+      color: #f0f7e6;
+      margin-bottom: 8px;
+    }
+    .cta .cta-sub { font-size: 15px; color: #7a9e7c; margin-bottom: 36px; }
+    .price-from { font-size: 14px; color: #4d7550; text-decoration: line-through; margin-bottom: 6px; }
+    .price {
+      font-family: 'Playfair Display', serif;
+      font-size: 56px;
+      font-weight: 700;
+      color: #f0f7e6;
+      line-height: 1;
+      margin-bottom: 8px;
+    }
+    .price sup { font-size: 24px; vertical-align: top; margin-top: 12px; display: inline-block; }
+    .price .cents { font-size: 30px; }
+    .price-note { font-size: 13px; color: #4d7550; margin-bottom: 36px; }
+    .btn-primary {
+      display: block;
+      width: 100%;
+      max-width: 380px;
+      margin: 0 auto 14px;
+      background: #4a9e52;
+      color: #fff;
+      font-size: 17px;
+      font-weight: 500;
+      padding: 17px 28px;
+      border-radius: 50px;
+      border: none;
+      cursor: pointer;
+      text-decoration: none;
+      transition: background 0.2s, transform 0.15s;
+      letter-spacing: 0.2px;
+    }
+    .btn-primary:hover { background: #3d8a44; transform: translateY(-2px); }
+    .btn-primary i { font-size: 20px; vertical-align: -4px; margin-right: 8px; }
+    .btn-secondary {
+      display: block;
+      width: 100%;
+      max-width: 380px;
+      margin: 0 auto 36px;
+      background: transparent;
+      color: #6dbf75;
+      font-size: 16px;
+      font-weight: 500;
+      padding: 15px 28px;
+      border-radius: 50px;
+      border: 0.5px solid #2a5230;
+      cursor: pointer;
+      text-decoration: none;
+      transition: border-color 0.2s, background 0.2s;
+    }
+    .btn-secondary:hover { background: #101e12; border-color: #4a9e52; }
+    .btn-secondary i { font-size: 20px; vertical-align: -4px; margin-right: 8px; }
+    .guarantee {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      color: #4d7550;
+      font-size: 13px;
+    }
+    .guarantee i { font-size: 22px; color: #3d7a42; }
+    footer {
+      text-align: center;
+      padding: 28px 24px;
+      font-size: 12px;
+      color: #243826;
+      border-top: 0.5px solid #131f14;
+    }
+    footer a { color: #2d5430; text-decoration: none; }
+    footer a:hover { text-decoration: underline; }
+    @media (max-width: 480px) {
+      .stats { gap: 24px; }
+      .price { font-size: 44px; }
+    }
+  </style>
+</head>
+<body>
+
+  <section class="hero">
+    <div class="badge">🌿 Medicina Natural</div>
+    <h1>O Poder das Plantas<br>que a Natureza <span>Escondeu</span></h1>
+    <p class="sub">Chás, ervas e plantas medicinais que aliviam, curam e regeneram — direto da sabedoria ancestral para a sua casa.</p>
+
+    <div class="video-wrap">
+      <div class="video-container">
+        <video src="galeria/video cha de urina.mp4" controls autoplay muted playsinline style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border: none; object-fit: cover;"></video>
+      </div>
+      <p class="video-note">⏱ Aprox. 1 minutes &nbsp;·&nbsp; Assista até o final para a oferta especial</p>
+    </div>
+  </section>
+
+  <div id="pitch-sections">
+s
+    <hr class="sep" />
+
+    <section class="section">
+      <div class="divider"></div>
+      <h2>O que você vai descobrir</h2>
+      <p class="desc">Um guia completo em PDF com receitas, dosagens e usos corretos das principais plantas medicinais do Brasil.</p>
+
+      <div class="cards">
+        <div class="card">
+          <span class="card-icon">🍵</span>
+          <h3>Chás terapêuticos</h3>
+          <p>Receitas para insônia, ansiedade, dor e imunidade</p>
+        </div>
+        <div class="card">
+          <span class="card-icon">🌿</span>
+          <h3>Ervas medicinais</h3>
+          <p>Guia de identificação e cultivo em casa</p>
+        </div>
+        <div class="card">
+          <span class="card-icon">💧</span>
+          <h3>Tinturas e extratos</h3>
+          <p>Como preparar e conservar remédios naturais</p>
+        </div>
+        <div class="card">
+          <span class="card-icon">🧪</span>
+          <h3>Combinações seguras</h3>
+          <p>O que misturar — e o que evitar — com plantas</p>
+        </div>
+      </div>
+
+      <div class="stats">
+        <div class="stat">
+          <span class="stat-num">200+</span>
+          <span class="stat-lbl">plantas catalogadas</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">80+</span>
+          <span class="stat-lbl">receitas práticas</span>
+        </div>
+        <div class="stat">
+          <span class="stat-num">4.9★</span>
+          <span class="stat-lbl">avaliação média</span>
+        </div>
+      </div>
+    </section>
+
+    <hr class="sep" />
+
+    <section class="section">
+      <div class="divider"></div>
+      <h2>Quem já transformou a saúde</h2>
+      <p class="desc">Mais de 3.000 famílias brasileiras já usam o guia no dia a dia.</p>
+
+      <div class="testimonials">
+        <div class="testi">
+          <div class="testi-stars">★★★★★</div>
+          <p>"Em duas semanas usando as receitas de chás relaxantes do guia, minha qualidade de sono mudou completamente. Voltei a dormir a noite toda."</p>
+          <span class="testi-name">Ana Paula M.</span>
+          <span class="testi-loc">Belo Horizonte, MG</span>
+        </div>
+        <div class="testi">
+          <div class="testi-stars">★★★★★</div>
+          <p>"Minha mãe de 68 anos sentia muitas dores e indisposição. Depois dos chás indicados, ela ganhou uma nova vitalidade. Até o médico elogiou a melhora."</p>
+          <span class="testi-name">Roberto C.</span>
+          <span class="testi-loc">Curitiba, PR</span>
+        </div>
+        <div class="testi">
+          <div class="testi-stars">★★★★★</div>
+          <p>"Cultivo minhas próprias ervas seguindo o guia. Economizo e ainda tenho remédio fresco o ano todo."</p>
+          <span class="testi-name">Fernanda S.</span>
+          <span class="testi-loc">Salvador, BA</span>
+        </div>
+      </div>
+    </section>
+
+    <hr class="sep" />
+
+    <section class="cta">
+      <h2>Comece hoje mesmo</h2>
+      <p class="cta-sub">Acesso imediato ao PDF após o pagamento</p>
+
+      <p class="price-from">De R$ 97,00</p>
+      <div class="price"><sup>R$</sup>27<span class="cents">,00</span></div>
+      <p class="price-note">Pagamento único &nbsp;·&nbsp; Download em PDF &nbsp;·&nbsp; Acesso para sempre</p>
+
+      <a href="👉 LINK_DO_CHECKOUT_KIWIFY" class="btn-primary" onclick="fbq('track', 'InitiateCheckout');">
+        <i class="ti ti-file-download" aria-hidden="true"></i>
+        Quero meu PDF agora
+      </a>
+
+      <a href="https://wa.me/5531999999999?text=Olá!%20Quero%20saber%20mais%20sobre%20o%20guia%20de%20plantas%20medicinais." class="btn-secondary" target="_blank" rel="noopener" onclick="fbq('track', 'Contact');">
+        <i class="ti ti-brand-whatsapp" aria-hidden="true"></i>
+        Tirar dúvidas no WhatsApp
+      </a>
+
+      <div class="guarantee">
+        <i class="ti ti-shield-check" aria-hidden="true"></i>
+        Garantia de 7 dias — se não gostar, devolvemos 100% do valor
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2026 · Ervas &amp; Sabedoria · Todos os direitos reservados</p>
+      <p style="margin-top:6px;">
+        <a href="privacidade.html">Política de Privacidade</a> &nbsp;·&nbsp; <a href="#">Termos de Uso</a>
+      </p>
+    </footer>
+
+  </div>
+
+</body>
+</html>
